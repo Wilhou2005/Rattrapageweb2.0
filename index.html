@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscars 2020</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fefefe;
+            color: #000;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: #a9994e;
+        }
+        .films {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .film {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+            transition: transform 2s ease-out, border 0.4s ease;
+        }
+        .film img {
+            width: 200px;
+            height: auto;
+            opacity: 0.6;
+            transition: opacity 0.4s ease, transform 2s ease-out;
+        }
+        .film:hover img {
+            opacity: 1;
+            transform: scale(1.25);
+        }
+        .film:hover {
+            border: 2px solid white;
+        }
+        .film h2 {
+            margin-top: 14px;
+            background-color: white;
+            padding: 8px;
+            transition: background-color 3s ease, color 3s ease;
+        }
+        .film:hover h2 {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Oscars">
+    </header>
+    
+    <main>
+        <h1>Qui gagnera l'Oscar du Meilleur Film ?!</h1>
+        <section class="films">
+            <div class="film">
+                <img src="images/Joker.jpg" alt="Joker">
+                <h2>Joker</h2>
+            </div>
+            <div class="film">
+                <img src="images/LeMans66.jpg" alt="Le Mans 66">
+                <h2>Le Mans 66</h2>
+            </div>
+            <div class="film">
+                <img src="images/Parasite.jpg" alt="Parasite">
+                <h2>Parasite</h2>
+            </div>
+            <div class="film">
+                <img src="images/1917.jpg" alt="1917">
+                <h2>1917</h2>
+            </div>
+            <div class="film">
+                <img src="images/Jojo-Rabbit.jpg" alt="Jojo Rabbit">
+                <h2>Jojo Rabbit</h2>
+            </div>
+            <div class="film">
+                <img src="images/LesFillesduDocteurMarch.jpg" alt="Les Filles du Docteur March">
+                <h2>Les Filles du Docteur March</h2>
+            </div>
+            <div class="film">
+                <img src="images/Marriage-Story.jpg" alt="Marriage Story">
+                <h2>Marriage Story</h2>
+            </div>
+            <div class="film">
+                <img src="images/OUTH.jpg" alt="Once Upon a Time in Hollywood">
+                <h2>Once Upon a Time in Hollywood</h2>
+            </div>
+            <div class="film">
+                <img src="images/THE-IRISHMAN.jpg" alt="The Irishman">
+                <h2>The Irishman</h2>
+            </div>
+        </section>
+
+        <section>
+            <h2>MEILLEUR RÉALISATEUR</h2>
+            <p>Bong Joon-ho pour «Parasite»</p>
+            <p>Todd Phillips pour «Joker»</p>
+            <p>Sam Mendes pour «1917»</p>
+            <p>Martin Scorsese pour «The Irishman»</p>
+            <p>Quentin Tarantino pour «Once Upon a Time ... in Hollywood»</p>
+        </section>
+        
+        <section>
+            <h2>MEILLEUR FILM ÉTRANGER</h2>
+            <p>«La Communion» (Pologne)</p>
+            <p>«Honeyland» (Macédoine du Nord)</p>
+            <p>«Les Misérables» (France)</p>
+            <p>«Douleur et gloire» (Espagne)</p>
+            <p>«Parasite» (Corée du Sud)</p>
+        </section>
+        
+        <section>
+            <h2>MEILLEURE ACTRICE</h2>
+            <p>Cynthia Erivo dans «Harriet»</p>
+            <p>Saoirse Ronan dans «Les Filles du Docteur March»</p>
+            <p>Scarlett Johansson dans «Marriage Story»</p>
+            <p>Charlize Theron dans «Scandale»</p>
+            <p>Renée Zellweger dans «Judy»</p>
+        </section>
+        
+        <section>
+            <h2>MEILLEUR ACTEUR</h2>
+            <p>Antonio Banderas dans «Douleur et Gloire»</p>
+            <p>Leonardo DiCaprio dans «Once Upon a Time... in Hollywood»</p>
+            <p>Adam Driver dans «Marriage Story»</p>
+            <p>Joaquin Phoenix dans «Joker»</p>
+            <p>Jonathan Pryce dans «Les deux Papes»</p>
+        </section>
+    </main>
+    
+    <footer>
+        <img src="images/oscars.jpg" alt="Oscars 2020">
+    </footer>
+</body>
+</html>

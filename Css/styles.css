@@ -1,0 +1,17 @@
+body {
+    width: 1440px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    margin: 10px;
+}
